@@ -1,0 +1,129 @@
+  <!-- Ptashenchuk Serhii -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нарезка материалов</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <div class="header__logo-image">logo</div>
+                </div>
+                <div class="nav">
+                    <a class="nav__link" href="#">Главная</a>
+                    <a class="nav__link" href="#">О нас</a>
+                    <a class="nav__link" href="#">Калькулятор</a>
+                    <a class="nav__link" href="#">Продукция</a>
+                    <a class="nav__link" href="#">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+<main class="main">
+
+   <div class="container">
+
+        <div class="main__inner">
+             <div name="add-detail" class="add-detail"> 
+                <h1 class="add-detail__title">Нарезка материалов</h1>
+                <h2 class="add-detail__subtitle">1. Выберите материал:</h2>
+                <select name="select-material" id="select-material">
+                    <option value="red-tree">Красное</option>
+                    <option value="parota">Парота</option>
+                    <option value="green-oak">Дуб</option>
+                </select>
+                <h2 class="main__subtitle">2. Укажите размеры заготовки:</h2>
+           
+               <div class="add-detail__param">
+                    <label for=""> Ширина, мм 
+                        <input class="add-detail__width" name="add-detail__width" type="number" placeholder="600" value=500 min=30 max="2800">
+                    </label>
+                    <label for=""> Высота, мм 
+                    <input class="add-detail__height" name="add-detail__height" type="number" placeholder="800" value=600 min="30" max="2070">
+                </label>
+                <button class="add-detail__btn">Добавить</button>
+               </div>
+
+               
+                       
+               
+                <div class="show-detail">
+                    <input class="arc left-top-radius" name="left-top-radius" type="number" placeholder="0 mm" min="0" value=0>
+                    <input class="arc right-top-radius" name="right-top-radius" type="number" placeholder="0 mm" min="0" value=0>
+                    <input class="arc left-bottom-radius" name="left-bottom-radius" type="number" placeholder="0 mm" min="0" value=0>
+                    <input class="arc right-bottom-radius" name="right-bottom-radius" type="number" placeholder="0 mm" min="0" value=0>
+
+                    <div class="show-detail__edge">
+
+                        <select class="edge" name="edge-top" id="edge-top">
+                            <option value="-">-</option>
+                            <option value="0.4">0.4</option>
+                            <option value="2">2</option>
+                        </select> 
+
+                        <select class="edge" name="edge-right" id="edge-right">
+                            <option value="-">-</option>
+                            <option value="0.4">0.4</option>
+                            <option value="2">2</option>
+                        </select> 
+
+                        <select class="edge" name="edge-bottom" id="edge-bottom">
+                            <option value="-">-</option>
+                            <option value="0.4">0.4</option>
+                            <option value="2">2</option>
+                        </select> 
+                        
+                        <select class="edge" name="edge-left" id="edge-left">
+                            <option value="-">-</option>
+                            <option value="0.4">0.4</option>
+                            <option value="2">2</option>
+                        </select> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="added-details">
+                <h2 class="added-details__title">Добавленные детали:</h2>
+                <ol class="added-details__list"></ol>
+            </div>
+        </div>
+
+       
+
+        <!-- Canvas 
+        ========================-->
+            <h2 class="add-detail__title">План распила</h2>
+
+        <canvas id="canvas" width="1035" height="915"></canvas>
+
+        <button class="btn-send">Отправить</button>
+   </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Veritatis, sint illo fuga voluptas omnis amet doloribus maxime odit quia error facere tenetur aperiam aliquid eum modi vitae eligendi iste repellendus delectus cupiditate. Optio voluptate obcaecati dolo.</p>
+            </div>
+            <div class="footer__contacts">
+                <p>Address: Lorem, ipsum dolor sit amet.</p>
+                <p>Phone: +3043930344I</p>
+                <p>e-mail: sdfslkj@nail.wer</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

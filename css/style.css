@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Header
+=======================*/
+
+.header {
+  width: 100%;
+  background-color: #eee;
+}
+
+.header__logo {
+  font-size: 25px;
+  color: #256;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px black;
+}
+
+.nav {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #000;
+  margin-left: 30px;
+  transition: all 0.3s linear;
+}
+
+.nav__link:first-child {
+  margin-left: 0;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+  color: #474;
+}
+
+.header__inner {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Main
+===================*/
+
+main {
+  margin-top: 70px;
+}
+
+.main__inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  max-width: 1098px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.add-detail {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.add-detail__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.add-detail__subtitle {
+  /*margin-left: 50px;*/
+  margin-bottom: 30px;
+}
+
+.add-detail {
+  margin-bottom: 50px;
+}
+
+#select-material {
+  font-size: 20px;
+}
+
+.add-detail__param {
+  margin-bottom: 60px;
+}
+
+.add-detail__width,
+.add-detail__height {
+  width: 50px;
+}
+
+.add-detail__btn {
+  margin-left: 30px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.show-detail {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin-left: 50px;
+  border: 2px solid #551;
+  margin-bottom: 70px;
+  background: rgb(78, 59, 59) url("../img/red-tree.jpg") center repeat;
+}
+
+.arc {
+  position: absolute;
+  border: 1px solid #000;
+  width: 50px;
+}
+
+.left-top-radius {
+  left: -75px;
+  top: 0;
+}
+
+.right-top-radius {
+  right: -75px;
+  top: 0;
+}
+
+.left-bottom-radius {
+  left: -75px;
+  bottom: 0;
+}
+
+.right-bottom-radius {
+  right: -75px;
+  bottom: 0;
+}
+
+.show-detail__edge {
+  width: 100%;
+  height: 100%;
+}
+
+.edge {
+  position: absolute;
+}
+
+#edge-top {
+  top: -30px;
+  left: 0;
+}
+
+#edge-right {
+  top: 30px;
+  right: -75px;
+}
+
+#edge-bottom {
+  bottom: -30px;
+  left: 0;
+}
+
+#edge-left {
+  top: 30px;
+  left: -75px;
+}
+
+.added-details__title {
+  text-align: center;
+}
+
+.added-details__item {
+  margin-bottom: 15px;
+}
+
+#canvas {
+  border: 1px solid #000;
+  background: #eef;
+  margin-bottom: 50px;
+}
+
+.btn-send {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 50px;
+}
+
+/*Footer
+======================*/
+
+.footer {
+  width: 100%;
+  background-color: #eee;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 30px;
+}
+.footer__text {
+  width: 700px;
+}
